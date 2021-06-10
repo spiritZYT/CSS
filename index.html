@@ -1,72 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .con div{
-            width:200px;
-            height:60px;
-            line-height:60px;
-            text-align:center;
-        }
-        .con div:nth-child(1){
-            background:lightpink;
-        }
-        .con div:nth-child(2){
-            background:lightsalmon;
-        }
-        .con div:nth-child(3){
-            background:lightskyblue;
-        }
-        .con div:nth-child(4){
-            background:limegreen;
-        }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>css3过渡</title>
 
-        @media screen and (min-width:1200px){
-            .con {
-                display:flex;
-                flex-direction:row;
-                justify-content:center;
-            }
-        }
-       @media screen and (min-width:992px) and (max-width:1200px){
-            .con{
-                margin:0 auto;
-                width:600px;
-                display:flex;
-                flex-wrap:wrap; 
-            }
-            .con div:nth-child(1){
-                width:600px;
-            }
-            
-        }
-         @media screen and (min-width:768px) and (max-width:992px){
-            .con{
-                margin:0 auto;
-                width:400px;
-                display:flex;
-                flex-wrap:wrap; 
-            }
-        }
-         @media screen and (max-width:768px){
-            .con {
-                display:flex;
-                flex-direction:column;
-                align-items:center;
-            }
-        } 
-    </style>
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+
+<style>
+.demo{width:360px; margin:60px auto 10px auto}
+@media only screen and (min-width: 420px) {
+	.demo{width:800px; margin:60px auto 10px auto}
+}
+.box{float:left; width:380px; height:260px}
+.clear{clear:both}
+</style>
+
 </head>
+
 <body>
-    <div class="con">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-    </div>
+
+<div class="demo">
+
+	<div class="box">
+		<div class="he_border1">
+			<img class="he_border1_img" src="images/pro_1.jpg" alt="Image 01">
+			<div class="he_border1_caption">
+				<h3 class="he_border1_caption_h">过渡</h3>
+				<p class="he_border1_caption_p">过渡效果+演示+源码</p>
+				<a class="he_border1_caption_a" href="#"></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="box">
+		<div class="he_border2">
+			<img class="he_border2_img" src="images/pro_2.jpg" alt="Image 01">
+			<div class="he_border2_caption">
+				<h3 class="he_border2_caption_h">过渡</h3>
+				<p class="he_border2_caption_p">过渡效果+演示+源码</p>
+				<a class="he_border2_caption_a" href="#"></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="box">
+		<div class="he_3DFlipX">
+			<div class="he_3DFlipX_inner">
+				<div class="he_3DFlipX_img">
+					<img src="images/pro_3.jpg" alt="img01">
+				</div>
+				<div class="he_3DFlipX_caption">
+					<h3>过渡</h3>
+					<p>过渡效果+演示+源码</p>
+				</div>
+				<a href="#"></a>
+			 </div>
+		</div>
+	</div>
+	
+	<div class="box">
+		<div class="he_3DFlipY">
+			<div class="he_3DFlipY_inner">
+				<div class="he_3DFlipY_img">
+					<img src="images/pro_1.jpg" alt="img01">
+				</div>
+				<div class="he_3DFlipY_caption">
+					<h3>过渡</h3>
+					<p>过渡效果+演示+源码</p>
+				</div>
+				<a href="#"></a>
+			 </div>
+		</div>
+	</div>
+	
+	<div class="clear"></div>
+	
+</div>
+
+
 </body>
 </html>
